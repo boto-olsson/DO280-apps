@@ -18,7 +18,7 @@ COPY httpd/www.conf /etc/php-fpm.d/www.conf
 ## SSL - This directive configures SSL support for the container
 COPY httpd/ssl.conf /etc/httpd/conf.d/ssl.conf
 COPY ssl/certs/tls.crt /usr/local/etc/ssl/certs/tls.crt
-
+COPY ssl/certs/tls.key /usr/local/etc/ssl/certs/tls.key
 ## End of SSL
 
 COPY index.php /var/www/html/index.php
